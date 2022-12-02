@@ -1,0 +1,45 @@
+:host {
+  display: block;
+
+  /* -- Default / Secondary -- */
+  --background-color: var(--ssd-alias-neutral-lightest);
+  --background-color-hover: var(--ssd-alias-neutral-lighter);
+  --text-color: inherit;
+  --text-color-hover: inherit;
+  --padding: var(--ssd-space-xs) var(--ssd-space-s);
+  --border: 1px solid var(--ssd-alias-neutral-lighter);
+  --border-hover: 1px solid var(--ssd-alias-neutral-lighter);
+  --border-radius: 0;
+}
+
+button,
+button.accent-secondary {
+  background-color: var(--background-color);
+  padding: var(--padding);
+  border: var(--border);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  &:hover {
+    background-color: var(--background-color-hover);
+    border: var(--border-hover);
+    color: var(--text-color-hover);
+  }
+}
+
+button.accent-primary {
+  --background-color: var(--ssd-alias-brand-primary-default);
+  --background-color-hover: var(--ssd-alias-brand-primary-dark);
+  --border: 1px solid var(--background-color);
+  --border-hover: 1px solid var(--background-color-hover);
+  --text-color: white;
+  --text-color-hover: white;
+}
+
+button.accent-ghost {
+  --background-color: transparent;
+  --background-color-hover: transparent;
+  --border: 1px solid var(--ssd-alias-neutral-default);
+  --border-hover: 1px solid var(--ssd-alias-neutral-darkest);
+  --text-color: inherit;
+  --text-color-hover: inherit;
+}

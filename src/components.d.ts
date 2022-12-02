@@ -20,6 +20,14 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface SsdButton {
+        "accent": "primary" | "secondary" | "ghost" | "destructive";
+        "disabled": boolean;
+    }
+}
+export interface SsdButtonCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSsdButtonElement;
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -28,8 +36,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLSsdButtonElement extends Components.SsdButton, HTMLStencilElement {
+    }
+    var HTMLSsdButtonElement: {
+        prototype: HTMLSsdButtonElement;
+        new (): HTMLSsdButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "ssd-button": HTMLSsdButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,8 +62,14 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface SsdButton {
+        "accent"?: "primary" | "secondary" | "ghost" | "destructive";
+        "disabled"?: boolean;
+        "onSdd_ButtonClick"?: (event: SsdButtonCustomEvent<any>) => void;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "ssd-button": SsdButton;
     }
 }
 export { LocalJSX as JSX };
@@ -56,6 +77,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "ssd-button": LocalJSX.SsdButton & JSXBase.HTMLAttributes<HTMLSsdButtonElement>;
         }
     }
 }

@@ -1,0 +1,32 @@
+{
+  "space": {
+    "xxs": {
+      "value": "4px",
+      "type": "size"
+    },
+    "xs": {
+      "value": "8px",
+      "type": "size"
+    },
+    "s": {
+      "value": "12px",
+      "type": "size"
+    },
+    "m": {
+      "value": "16px",
+      "type": "size"
+    },
+    "l": {
+      "value": "20px",
+      "type": "size"
+    },
+    "xl": {
+      "value": "24px",
+      "type": "size"
+    },
+    "xxl": {
+      "value": "32px",
+      "type": "size"
+    }
+  }
+}

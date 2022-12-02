@@ -1,0 +1,94 @@
+{
+  "alias": {
+    "brand": {
+      "primary": {
+        "default": {
+          "value": "{primatives.blue.50}",
+          "type": "color"
+        },
+        "light": {
+          "value": "{primatives.blue.60}",
+          "type": "color"
+        },
+        "lighter": {
+          "value": "{primatives.blue.70}",
+          "type": "color"
+        },
+        "lightest": {
+          "value": "{primatives.blue.80}",
+          "type": "color"
+        },
+        "dark": {
+          "value": "{primatives.blue.40}",
+          "type": "color"
+        },
+        "darker": {
+          "value": "{primatives.blue.30}",
+          "type": "color"
+        },
+        "darkest": {
+          "value": "{primatives.blue.20}",
+          "type": "color"
+        }
+      }
+    },
+    "negative": {
+      "default": {
+        "value": "{primatives.red.50}",
+        "type": "color"
+      },
+      "base": {
+        "value": "{primatives.red.60}",
+        "type": "color"
+      },
+      "contrast": {
+        "value": "{primatives.red.40}",
+        "type": "color"
+      }
+    },
+    "positive": {
+      "default": {
+        "value": "{primatives.green.50}",
+        "type": "color"
+      },
+      "base": {
+        "value": "{primatives.green.60}",
+        "type": "color"
+      },
+      "contrast": {
+        "value": "{primatives.green.40}",
+        "type": "color"
+      }
+    },
+    "neutral": {
+      "default": {
+        "value": "{primatives.grayscale.50}",
+        "type": "color"
+      },
+      "light": {
+        "value": "{primatives.grayscale.70}",
+        "type": "color"
+      },
+      "lighter": {
+        "value": "{primatives.grayscale.80}",
+        "type": "color"
+      },
+      "lightest": {
+        "value": "{primatives.grayscale.90}",
+        "type": "color"
+      },
+      "dark": {
+        "value": "{primatives.grayscale.30}",
+        "type": "color"
+      },
+      "darker": {
+        "value": "{primatives.grayscale.20}",
+        "type": "color"
+      },
+      "darkest": {
+        "value": "{primatives.grayscale.10}",
+        "type": "color"
+      }
+    }
+  }
+}

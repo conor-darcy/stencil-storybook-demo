@@ -1,0 +1,32 @@
+{
+  "font-size": {
+    "1": {
+      "value": "12px",
+      "type": "font-size"
+    },
+    "2": {
+      "value": "16px",
+      "type": "font-size"
+    },
+    "3": {
+      "value": "20px",
+      "type": "font-size"
+    },
+    "4": {
+      "value": "24px",
+      "type": "font-size"
+    },
+    "5": {
+      "value": "32px",
+      "type": "font-size"
+    },
+    "6": {
+      "value": "48px",
+      "type": "font-size"
+    },
+    "7": {
+      "value": "60px",
+      "type": "font-size"
+    }
+  }
+}
