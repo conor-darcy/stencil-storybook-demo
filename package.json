@@ -25,7 +25,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -o docs-build",
     "stencil.dev": "npm run build -- --watch",
     "build-tokens": "style-dictionary build --config ./sd.config.json",
     "build-tokens.watch": "npm run build-tokens && chokidar  \"tokens/**/*.json\" -c \"npm run build-tokens\""
