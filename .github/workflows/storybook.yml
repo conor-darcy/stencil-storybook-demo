@@ -15,7 +15,7 @@ jobs:
           npm install
           npm run build
           npm run build-tokens
-          npm run build-storybook
+          npm run build-storybook -o docs-build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
